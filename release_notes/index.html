@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../installation/">
+        <link rel="prev" href="../usage/">
       
       
-        <link rel="next" href="../release_notes/">
+        <link rel="next" href="../examples/basic/">
       
       
         
@@ -23,7 +23,7 @@
     
     
       
-        <title>Usage - PyTao</title>
+        <title>Releases - PyTao</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#usage" class="md-skip">
+        <a href="#v100" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Usage
+              Releases
             
           </span>
         </div>
@@ -259,11 +259,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../usage/" class="md-tabs__link">
         
   
   
@@ -280,9 +278,11 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../release_notes/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
   
@@ -464,6 +464,33 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Usage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -483,7 +510,7 @@
   <span class="md-ellipsis">
     
   
-    Usage
+    Releases
   
 
     
@@ -501,7 +528,7 @@
   <span class="md-ellipsis">
     
   
-    Usage
+    Releases
   
 
     
@@ -527,22 +554,66 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pytao-with-jupyterlab" class="md-nav__link">
+  <a href="#new-features" class="md-nav__link">
     <span class="md-ellipsis">
       
-        PyTao with JupyterLab
+        New Features
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="PyTao with JupyterLab">
+    <nav class="md-nav" aria-label="New Features">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#subprocesstao-tao-in-a-subprocess" class="md-nav__link">
+  <a href="#pydantic-data-models-for-tao-state-pytaomodel" class="md-nav__link">
     <span class="md-ellipsis">
       
-        SubprocessTao - Tao in a subprocess
+        Pydantic data models for Tao state (pytao.model)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#particlegroup-helper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ParticleGroup helper
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#session-archiving" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Session archiving
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cli-argument-handling-rework" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CLI argument handling rework
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-handling-improvements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Error handling improvements
       
     </span>
   </a>
@@ -555,10 +626,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pytao-on-the-command-line" class="md-nav__link">
+  <a href="#other-changes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        PyTao on the command-line
+        Other Changes
       
     </span>
   </a>
@@ -566,21 +637,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pytao-plotting-and-startup-scripts" class="md-nav__link">
+  <a href="#backward-incompatible-changes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        PyTao plotting and startup scripts
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#notes-about-bokeh-on-jupyterhub" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Notes about Bokeh on JupyterHub
+        Backward Incompatible Changes
       
     </span>
   </a>
@@ -591,33 +651,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../release_notes/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Releases
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -1426,22 +1459,66 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pytao-with-jupyterlab" class="md-nav__link">
+  <a href="#new-features" class="md-nav__link">
     <span class="md-ellipsis">
       
-        PyTao with JupyterLab
+        New Features
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="PyTao with JupyterLab">
+    <nav class="md-nav" aria-label="New Features">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#subprocesstao-tao-in-a-subprocess" class="md-nav__link">
+  <a href="#pydantic-data-models-for-tao-state-pytaomodel" class="md-nav__link">
     <span class="md-ellipsis">
       
-        SubprocessTao - Tao in a subprocess
+        Pydantic data models for Tao state (pytao.model)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#particlegroup-helper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ParticleGroup helper
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#session-archiving" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Session archiving
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cli-argument-handling-rework" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CLI argument handling rework
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-handling-improvements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Error handling improvements
       
     </span>
   </a>
@@ -1454,10 +1531,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pytao-on-the-command-line" class="md-nav__link">
+  <a href="#other-changes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        PyTao on the command-line
+        Other Changes
       
     </span>
   </a>
@@ -1465,21 +1542,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pytao-plotting-and-startup-scripts" class="md-nav__link">
+  <a href="#backward-incompatible-changes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        PyTao plotting and startup scripts
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#notes-about-bokeh-on-jupyterhub" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Notes about Bokeh on JupyterHub
+        Backward Incompatible Changes
       
     </span>
   </a>
@@ -1509,127 +1575,387 @@
   
 
 
-<h1 id="usage">Usage</h1>
-<h2 id="pytao-with-jupyterlab">PyTao with JupyterLab</h2>
-<p>PyTao has advanced JupyterLab integration for plotting and is generally the recommended method for using PyTao.</p>
-<p>Start up JupyterLab as you would normally:</p>
-<div class="highlight"><pre><span></span><code>jupyter<span class="w"> </span>lab
-</code></pre></div>
-<p>And then use PyTao, enabling your preferred plotting backend:</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pytao</span><span class="w"> </span><span class="kn">import</span> <span class="n">Tao</span>
-
-<span class="c1"># Best available (Bokeh first, Matplotlib second)</span>
-<span class="n">tao</span> <span class="o">=</span> <span class="n">Tao</span><span class="p">(</span><span class="n">init_file</span><span class="o">=</span><span class="s2">&quot;$ACC_ROOT_DIR/bmad-doc/tao_examples/cbeta_cell/tao.init&quot;</span><span class="p">,</span> <span class="n">plot</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="c1"># Matplotlib:</span>
-<span class="n">tao</span> <span class="o">=</span> <span class="n">Tao</span><span class="p">(</span><span class="n">init_file</span><span class="o">=</span><span class="s2">&quot;$ACC_ROOT_DIR/bmad-doc/tao_examples/cbeta_cell/tao.init&quot;</span><span class="p">,</span> <span class="n">plot</span><span class="o">=</span><span class="s2">&quot;mpl&quot;</span><span class="p">)</span>
-<span class="c1"># Bokeh</span>
-<span class="n">tao</span> <span class="o">=</span> <span class="n">Tao</span><span class="p">(</span><span class="n">init_file</span><span class="o">=</span><span class="s2">&quot;$ACC_ROOT_DIR/bmad-doc/tao_examples/cbeta_cell/tao.init&quot;</span><span class="p">,</span> <span class="n">plot</span><span class="o">=</span><span class="s2">&quot;bokeh&quot;</span><span class="p">)</span>
-</code></pre></div>
-<p>If you wish to use Tao's internal plotting mechanism, leave the <code>plot</code> keyword argument off or specify <code>plot="tao"</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pytao</span><span class="w"> </span><span class="kn">import</span> <span class="n">Tao</span>
-
-<span class="c1"># Use Tao&#39;s internal plotting mechanism:</span>
-<span class="n">tao</span> <span class="o">=</span> <span class="n">Tao</span><span class="p">(</span><span class="n">init_file</span><span class="o">=</span><span class="s2">&quot;$ACC_ROOT_DIR/bmad-doc/tao_examples/cbeta_cell/tao.init&quot;</span><span class="p">)</span>
-</code></pre></div>
-<p>To disable plotting entirely, use:</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pytao</span><span class="w"> </span><span class="kn">import</span> <span class="n">Tao</span>
-
-<span class="c1"># Use Tao&#39;s internal plotting mechanism:</span>
-<span class="n">tao</span> <span class="o">=</span> <span class="n">Tao</span><span class="p">(</span><span class="n">init_file</span><span class="o">=</span><span class="s2">&quot;$ACC_ROOT_DIR/bmad-doc/tao_examples/cbeta_cell/tao.init&quot;</span><span class="p">,</span> <span class="n">noplot</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</code></pre></div>
-<p>The <code>Tao</code> object supports all Tao initialization arguments as Python keyword arguments.
-That is, any of the following may be specified to <code>Tao</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="n">Tao</span><span class="p">(</span>
-  <span class="n">beam_file</span><span class="o">=</span><span class="s2">&quot;file_name&quot;</span><span class="p">,</span>                <span class="c1"># File containing the tao_beam_init namelist.</span>
-  <span class="n">beam_init_position_file</span><span class="o">=</span><span class="s2">&quot;file_name&quot;</span><span class="p">,</span>  <span class="c1"># File containing initial particle positions.</span>
-  <span class="n">building_wall_file</span><span class="o">=</span><span class="s2">&quot;file_name&quot;</span><span class="p">,</span>       <span class="c1"># Define the building tunnel wall</span>
-  <span class="n">command</span><span class="o">=</span><span class="s2">&quot;command_string&quot;</span><span class="p">,</span>             <span class="c1"># Commands to run after startup file commands</span>
-  <span class="n">data_file</span><span class="o">=</span><span class="s2">&quot;file_name&quot;</span><span class="p">,</span>                <span class="c1"># Define data for plotting and optimization</span>
-  <span class="n">debug</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>                           <span class="c1"># Debug mode for Wizards</span>
-  <span class="n">disable_smooth_line_calc</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>        <span class="c1"># Disable the smooth line calc used in plotting</span>
-  <span class="n">external_plotting</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>               <span class="c1"># Tells Tao that plotting is done externally to Tao.</span>
-  <span class="n">geometry</span><span class="o">=</span><span class="s2">&quot;&lt;width&gt;x&lt;height&gt;&quot;</span><span class="p">,</span>          <span class="c1"># Plot window geometry (pixels)</span>
-  <span class="n">hook_init_file</span><span class="o">=</span><span class="s2">&quot;file_name&quot;</span><span class="p">,</span>           <span class="c1"># Init file for hook routines (Default = tao_hook.init)</span>
-  <span class="n">init_file</span><span class="o">=</span><span class="s2">&quot;file_name&quot;</span><span class="p">,</span>                <span class="c1"># Tao init file</span>
-  <span class="n">lattice_file</span><span class="o">=</span><span class="s2">&quot;file_name&quot;</span><span class="p">,</span>             <span class="c1"># Bmad lattice file</span>
-  <span class="n">log_startup</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>                     <span class="c1"># Write startup debugging info</span>
-  <span class="n">no_stopping</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>                     <span class="c1"># For debugging: Prevents Tao from exiting on errors</span>
-  <span class="n">noinit</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>                          <span class="c1"># Do not use Tao init file.</span>
-  <span class="n">noplot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>                          <span class="c1"># Do not open a plotting window</span>
-  <span class="n">nostartup</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>                       <span class="c1"># Do not open a startup command file</span>
-  <span class="n">no_rad_int</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>                      <span class="c1"># Do not do any radiation integrals calculations.</span>
-  <span class="n">plot_file</span><span class="o">=</span><span class="s2">&quot;file_name&quot;</span><span class="p">,</span>                <span class="c1"># Plotting initialization file</span>
-  <span class="n">prompt_color</span><span class="o">=</span><span class="s2">&quot;color&quot;</span><span class="p">,</span>                 <span class="c1"># Set color of prompt string. Default is blue.</span>
-  <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>                         <span class="c1"># Reverse lattice element order?</span>
-  <span class="n">rf_on</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>                           <span class="c1"># Use &quot;--rf_on&quot; to turn off RF (default is now RF on)</span>
-  <span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>                           <span class="c1"># Suppress terminal output when running a command file?</span>
-  <span class="n">slice_lattice</span><span class="o">=</span><span class="s2">&quot;ele_list&quot;</span><span class="p">,</span>             <span class="c1"># Discards elements from lattice that are not in the list</span>
-  <span class="n">start_branch_at</span><span class="o">=</span><span class="s2">&quot;ele_name&quot;</span><span class="p">,</span>           <span class="c1"># Start lattice branch at element.</span>
-  <span class="n">startup_file</span><span class="o">=</span><span class="s2">&quot;file_name&quot;</span><span class="p">,</span>             <span class="c1"># Commands to run after parsing Tao init file</span>
-  <span class="n">symbol_import</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>                   <span class="c1"># Import symbols defined in lattice files(s)?</span>
-  <span class="n">var_file</span><span class="o">=</span><span class="s2">&quot;file_name&quot;</span><span class="p">,</span>                 <span class="c1"># Define variables for plotting and optimization</span>
-<span class="p">)</span>
-</code></pre></div>
-<p>Note that <code>quiet</code> mode may cause portions of PyTao to function improperly. See
-upstream <a href="https://github.com/bmad-sim/bmad-ecosystem/issues/1380">issue</a>.</p>
-<h3 id="subprocesstao-tao-in-a-subprocess"><code>SubprocessTao</code> - Tao in a subprocess</h3>
-<p>If you wish to load multiple lattices at the same time, consider using <code>SubprocessTao</code>.
-It can be used in the same way as the <code>Tao</code> class.</p>
-<p>Use this form when possible:</p>
-<div class="highlight"><pre><span></span><code><span class="k">with</span> <span class="n">SubprocessTao</span><span class="p">(</span><span class="n">lattice_file</span><span class="p">)</span> <span class="k">as</span> <span class="n">tao</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">tao</span><span class="o">.</span><span class="n">cmd</span><span class="p">(</span><span class="s2">&quot;show lat&quot;</span><span class="p">))</span>
-</code></pre></div>
-<p>Once the <code>with</code> block ends, the subprocess will automatically be closed and cleaned up.
-For manual lifetime control, use <code>tao.close_subprocess()</code>.</p>
-<h2 id="pytao-on-the-command-line">PyTao on the command-line</h2>
-<p>PyTao has a simple IPython entrypoint, giving you quick access to Tao in Python.</p>
-<p>The following will start IPython with a <code>Tao</code> instance available as <code>tao</code>:</p>
-<div class="highlight"><pre><span></span><code>pytao<span class="w"> </span>-init_file<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$ACC_ROOT_DIR</span><span class="s2">/bmad-doc/tao_examples/cbeta_cell/tao.init&quot;</span>
-</code></pre></div>
-<p>To use PyTao's Matplotlib backend, set <code>--pyplot=mpl</code>:</p>
-<div class="highlight"><pre><span></span><code>pytao<span class="w"> </span>--pyplot<span class="o">=</span>mpl<span class="w"> </span>-init<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$ACC_ROOT_DIR</span><span class="s2">/bmad-doc/tao_examples/cbeta_cell/tao.init&quot;</span>
-</code></pre></div>
-<p>Or use the environment variable <code>PYTAO_PLOT</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">PYTAO_PLOT</span><span class="o">=</span>mpl<span class="w"> </span>pytao<span class="w"> </span>-init_file<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$ACC_ROOT_DIR</span><span class="s2">/bmad-doc/tao_examples/cbeta_cell/tao.init&quot;</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="n">tao</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="s2">&quot;beta&quot;</span><span class="p">)</span>
-</code></pre></div>
-<h2 id="pytao-plotting-and-startup-scripts">PyTao plotting and startup scripts</h2>
-<p>When PyTao is instructed to use its Matplotlib or Bokeh backends, it configures
-the underlying Tao instance to work in <code>-noplot</code> mode. If you have plotting
-calls in your startup script, you may see warnings and errors that prevent you
-from using your Tao object.</p>
-<p>Consider these alternatives:</p>
-<ol>
-<li>Use <code>-nostartup</code> (or <code>Tao(nostartup=True)</code>) to avoid using your startup file.</li>
-<li>Consider making a "no plot" alternative startup file.</li>
-<li>Use PyTao error filtering to ignore errors coming from specific Tao functions at startup:</li>
-</ol>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">pytao</span><span class="w"> </span><span class="kn">import</span> <span class="n">Tao</span><span class="p">,</span> <span class="n">filter_tao_messages_context</span>
-
-
-<span class="k">with</span> <span class="n">filter_tao_messages_context</span><span class="p">(</span><span class="n">functions</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;tao_find_plots&quot;</span><span class="p">]):</span>
-    <span class="n">tao</span> <span class="o">=</span> <span class="n">Tao</span><span class="p">(</span><span class="n">init_file</span><span class="o">=</span><span class="s2">&quot;tao.init&quot;</span><span class="p">,</span> <span class="n">plot</span><span class="o">=</span><span class="s2">&quot;mpl&quot;</span><span class="p">)</span>
-
-<span class="n">tao</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="s2">&quot;beta&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</code></pre></div>
-<h2 id="notes-about-bokeh-on-jupyterhub">Notes about Bokeh on JupyterHub</h2>
-<p>If you are using PyTao with Bokeh on your computer and are running JupyterLab
-locally, you can safely ignore this section.</p>
-<p>If you are accessing a JupyterHub deployment on an HPC cluster through a
-non-<code>localhost</code> website, there are some additional setup steps required.</p>
-<p>Please read <a href="https://docs.bokeh.org/en/latest/docs/user_guide/output/jupyter.html">this document</a> from Bokeh for full details.</p>
-<p>At minimum, you will need to:</p>
+<h1 id="v100">v1.0.0</h1>
+<h2 id="new-features">New Features</h2>
+<h3 id="pydantic-data-models-for-tao-state-pytaomodel">Pydantic data models for Tao state (<code>pytao.model</code>)</h3>
+<p>PyTao now provides Pydantic v2 models that represent the live state of Tao.
+These models can be queried from Tao, modified in Python, and applied back.</p>
 <ul>
-<li>Configure <code>JUPYTER_BOKEH_EXTERNAL_URL</code> to point to your server. For example, users may specify the following in their <code>~/.bashrc</code>: <code>export JUPYTER_BOKEH_EXTERNAL_URL="https//example.com"</code> (replacing <code>example.com</code> with the URL you use to access JupyterHub)</li>
+<li><strong><code>TaoConfig</code></strong> — captures the complete configuration of a Tao session:
+  startup parameters, <code>BmadCom</code>, <code>SpaceChargeCom</code>, <code>BeamInit</code>, <code>Beam</code>,
+  <code>TaoGlobal</code>, and per-element overrides.</li>
 </ul>
-<p>Additionally, you may be required to:</p>
+<div class="highlight"><pre><span></span><code><span class="n">config</span> <span class="o">=</span> <span class="n">tao</span><span class="o">.</span><span class="n">get_config</span><span class="p">()</span>
+<span class="n">config</span><span class="o">.</span><span class="n">beam_init</span><span class="o">.</span><span class="n">a_emit</span> <span class="o">=</span> <span class="mf">1e-8</span>
+<span class="n">config</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">tao</span><span class="p">)</span>                    <span class="c1"># apply all settings</span>
+<span class="n">config</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">tao</span><span class="p">,</span> <span class="n">only_changed</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># apply only what changed</span>
+</code></pre></div>
 <ul>
-<li>In the JupyterHub environment, <code>conda install jupyter-server-proxy</code></li>
-<li>Restart JupyterHub</li>
+<li><strong>Settings sub-models</strong> — <code>BmadCom</code>, <code>SpaceChargeCom</code>, <code>BeamInit</code>, <code>Beam</code>,
+  and <code>TaoGlobal</code> can also be used independently:</li>
 </ul>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pytao.model</span><span class="w"> </span><span class="kn">import</span> <span class="n">BeamInit</span>
+<span class="n">beam_init</span> <span class="o">=</span> <span class="n">BeamInit</span><span class="o">.</span><span class="n">from_tao</span><span class="p">(</span><span class="n">tao</span><span class="p">)</span>
+<span class="n">beam_init</span><span class="o">.</span><span class="n">a_emit</span> <span class="o">=</span> <span class="mf">1e-6</span>
+<span class="k">with</span> <span class="n">beam_init</span><span class="o">.</span><span class="n">set_context</span><span class="p">(</span><span class="n">tao</span><span class="p">):</span>
+    <span class="c1"># temporarily applied; restored on exit</span>
+    <span class="o">...</span>
+</code></pre></div>
+<ul>
+<li><strong><code>Element</code></strong> — structured representation of a lattice element with head
+  metadata, general attributes, Twiss parameters, orbit, transfer matrix,
+  floor coordinates, multipoles, wake fields, chamber walls, and more.
+  Data loading is controlled per-field.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="n">ele</span> <span class="o">=</span> <span class="n">tao</span><span class="o">.</span><span class="n">ele</span><span class="p">(</span><span class="s2">&quot;Q00W&quot;</span><span class="p">)</span>
+<span class="n">ele</span><span class="o">.</span><span class="n">twiss</span><span class="o">.</span><span class="n">beta_a</span>
+<span class="n">ele</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s2">&quot;k1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">data</span>
+<span class="n">ele</span><span class="o">.</span><span class="n">floor</span><span class="o">.</span><span class="n">end</span><span class="o">.</span><span class="n">actual</span><span class="o">.</span><span class="n">x</span>
+</code></pre></div>
+<ul>
+<li>
+<p><strong><code>Lattice</code></strong> — a collection of <code>Element</code> objects with lookup by name,
+  key, or index. Multiple constructors: <code>from_tao_tracking</code>,
+  <code>from_tao_unique</code>, <code>from_tao_eles</code>.</p>
+</li>
+<li>
+<p><strong><code>tao.eles()</code></strong> — query multiple elements using Tao's full element
+  matching syntax (wildcards, ranges, key filters):</p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="n">quads</span> <span class="o">=</span> <span class="n">tao</span><span class="o">.</span><span class="n">eles</span><span class="p">(</span><span class="s2">&quot;quad::*&quot;</span><span class="p">)</span>
+<span class="n">eles_1_to_20</span> <span class="o">=</span> <span class="n">tao</span><span class="o">.</span><span class="n">eles</span><span class="p">(</span><span class="s2">&quot;1:20&quot;</span><span class="p">)</span>
+</code></pre></div>
+<ul>
+<li>
+<p><strong>Serialization</strong> — all models support <code>.write()</code> / <code>.from_file()</code> for JSON,
+  <code>.json.gz</code>, msgpack, and YAML.
+  <a href="https://github.com/ormsgpack/ormsgpack"><code>ormsgpack</code></a> is used for the
+  (recommended and fastest) serialization method <a href="https://msgpack.org">msgpack</a>,
+  while <code>orjson</code> is used for faster-than-stdlib
+  JSON serialization. These are both new requirements.</p>
+</li>
+<li>
+<p><strong>Code generation</strong> — <code>TaoGlobal</code>, <code>BeamInit</code>, etc. are auto-generated from
+  Bmad/Tao structure definitions (<code>scripts/structs.json</code>) via <code>model/codegen.py</code>.</p>
+</li>
+</ul>
+<h3 id="particlegroup-helper">ParticleGroup helper</h3>
+<ul>
+<li><strong><code>tao.particles()</code></strong> — is a new shortcut to get an openPMD-BeamPhysics <code>ParticleGroup</code>
+  instance for a given element.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="n">P</span> <span class="o">=</span> <span class="n">tao</span><span class="o">.</span><span class="n">particles</span><span class="p">(</span><span class="s2">&quot;quad::Q1&quot;</span><span class="p">)</span>  <span class="c1"># type: beamphysics.ParticleGroup</span>
+<span class="n">P</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="s2">&quot;px&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="session-archiving">Session archiving</h3>
+<ul>
+<li><strong><code>tao.archive(directory)</code></strong> writes a self-contained, reproducible archive:
+  the current lattice (via <code>write bmad</code>), a Tao command file with all <code>set</code>
+  commands, and a bash script that re-launches the session.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="n">sh_file</span><span class="p">,</span> <span class="n">cmd_file</span> <span class="o">=</span> <span class="n">tao</span><span class="o">.</span><span class="n">archive</span><span class="p">(</span><span class="s2">&quot;my_archive&quot;</span><span class="p">)</span>
+</code></pre></div>
+<ul>
+<li><strong><code>config.write_bash_loader_script()</code></strong> provides lower-level control over
+  archive generation (custom Tao binary, prefix, optional lattice export).</li>
+</ul>
+<h3 id="cli-argument-handling-rework">CLI argument handling rework</h3>
+<ul>
+<li><code>TaoStartup</code> now parses all Tao command-line arguments the same way Tao
+  does, rather than juggling a free-form <code>init</code> string alongside individual
+  attributes.</li>
+<li>Fixes for <code>pytao -command</code> which Tao had silently been ignoring; PyTao
+  now handles it correctly.</li>
+<li>All arguments are documented consistently in <code>pytao --help</code>.</li>
+</ul>
+<h3 id="error-handling-improvements">Error handling improvements</h3>
+<ul>
+<li>More consistent error handling between <code>SubprocessTao</code> and <code>Tao</code>:
+  Tao messages from pipe command output are handled consistently between
+  the regular Tao and the subprocess variant.</li>
+<li>Filtered messages from pipe commands are redirected to Python logging.</li>
+<li>Added <code>PYTAO_LIB_PATH</code> environment variable to force PyTao to use a
+  specific <code>libtao.so</code>.</li>
+</ul>
+<h2 id="other-changes">Other Changes</h2>
+<ul>
+<li>Autogenerated interface commands are now a mixin class
+  (<code>_TaoAutogeneratedCommandMixin</code>), simplifying development.</li>
+<li>Python 3.14 compatibility fixes.</li>
+<li>Better support for <code>pip</code>-based (PyPI) installs with proper dependency
+  listings.</li>
+<li>Import cleanups and fixes throughout the codebase.</li>
+<li>Type annotations for auto-generated Tao <code>pipe</code> interface routines.</li>
+<li>Small performance improvements in subprocess</li>
+<li>Subprocess tests reuse a single <code>SubprocessTao</code> instance by default
+  (set <code>TAO_REUSE_SUBPROCESS=1</code>), speeding up CI.</li>
+</ul>
+<h2 id="backward-incompatible-changes">Backward Incompatible Changes</h2>
+<ul>
+<li><strong>Python 3.10+ is now required.</strong></li>
+<li><strong>Bmad &gt;=20260317</strong> is also now required for all features to behave as designed.</li>
+<li>Removed legacy <code>tao_interface</code> and <code>tao_pexpect</code>.</li>
+<li>Removed <code>pytao-gui</code> entrypoint and <code>pytao.gui</code> submodule.</li>
+<li>Removed the largely defunct <code>as_dict</code> parameter from all interface commands.</li>
+<li><code>TaoStartup.init</code> attribute was removed. The free-form init string is now
+  parsed into individual attributes. It is still accepted as an initializer
+  argument: <code>TaoStartup(init="-lat foo.lat")</code>.</li>
+</ul>
+<hr />
+<h1 id="v057">v0.5.7</h1>
+<h2 id="whats-changed">What's Changed</h2>
+<ul>
+<li>Fix Derivative Parser by @electronsandstuff in <a href="https://github.com/bmad-sim/pytao/pull/148">https://github.com/bmad-sim/pytao/pull/148</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/bmad-sim/pytao/compare/v0.5.6...v0.5.7">https://github.com/bmad-sim/pytao/compare/v0.5.6...v0.5.7</a></p>
+<hr />
+<h1 id="v056">v0.5.6</h1>
+<h2 id="whats-changed_1">What's Changed</h2>
+<ul>
+<li>DOC: release process by @ken-lauer in <a href="https://github.com/bmad-sim/pytao/pull/146">https://github.com/bmad-sim/pytao/pull/146</a></li>
+<li>FIX: handle potential empty string case for pytypes by @ken-lauer in <a href="https://github.com/bmad-sim/pytao/pull/147">https://github.com/bmad-sim/pytao/pull/147</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/bmad-sim/pytao/compare/v0.5.5...v0.5.6">https://github.com/bmad-sim/pytao/compare/v0.5.5...v0.5.6</a></p>
+<hr />
+<h1 id="v055">v0.5.5</h1>
+<h2 id="whats-changed_2">What's Changed</h2>
+<ul>
+<li>Fix FODO notebook by @ChristopherMayes in <a href="https://github.com/bmad-sim/pytao/pull/145">https://github.com/bmad-sim/pytao/pull/145</a></li>
+<li>Add parsers for the new <code>lord_control</code> and <code>slave_control</code> Tao pipe commands by @ChristopherMayes in <a href="https://github.com/bmad-sim/pytao/pull/144">https://github.com/bmad-sim/pytao/pull/144</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/bmad-sim/pytao/compare/v0.5.4...v0.5.5">https://github.com/bmad-sim/pytao/compare/v0.5.4...v0.5.5</a></p>
+<hr />
+<h1 id="v054">v0.5.4</h1>
+<h2 id="whats-changed_3">What's Changed</h2>
+<ul>
+<li>ENH: add Tao.from_lattice_contents by @ken-lauer in <a href="https://github.com/bmad-sim/pytao/pull/137">https://github.com/bmad-sim/pytao/pull/137</a></li>
+<li>Added that ACC_ENABLE_SHARED_ONLY=Y is acceptable. by @DavidSagan in <a href="https://github.com/bmad-sim/pytao/pull/142">https://github.com/bmad-sim/pytao/pull/142</a></li>
+</ul>
+<h2 id="full-changelog-httpsgithubcombmad-simpytaocomparev053v054"><strong>Full Changelog</strong>: <a href="https://github.com/bmad-sim/pytao/compare/v0.5.3...v0.5.4">https://github.com/bmad-sim/pytao/compare/v0.5.3...v0.5.4</a></h2>
+<h1 id="v053">v0.5.3</h1>
+<h2 id="whats-changed_4">What's Changed</h2>
+<ul>
+<li>ENH: unique element ID helpers by @ken-lauer in <a href="https://github.com/bmad-sim/pytao/pull/135">https://github.com/bmad-sim/pytao/pull/135</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/bmad-sim/pytao/compare/v0.5.2...v0.5.3">https://github.com/bmad-sim/pytao/compare/v0.5.2...v0.5.3</a></p>
+<hr />
+<h1 id="v052">v0.5.2</h1>
+<h2 id="whats-changed_5">What's Changed</h2>
+<ul>
+<li>MAINT: rebuild interface for 'lat_header' by @ken-lauer in <a href="https://github.com/bmad-sim/pytao/pull/134">https://github.com/bmad-sim/pytao/pull/134</a></li>
+<li>DOC: add floor plan plot with ParticleGroup plot overlays example by @ken-lauer in <a href="https://github.com/bmad-sim/pytao/pull/110">https://github.com/bmad-sim/pytao/pull/110</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/bmad-sim/pytao/compare/v0.5.1...v0.5.2">https://github.com/bmad-sim/pytao/compare/v0.5.1...v0.5.2</a></p>
+<hr />
+<h1 id="v051">v0.5.1</h1>
+<h2 id="whats-changed_6">What's Changed</h2>
+<ul>
+<li>PERF: PyTao plotting performance has been improved.</li>
+<li>FIX: Overlapping plot regions should no longer affect PyTao's internal plotting mechanism.</li>
+</ul>
+<h3 id="pull-requests">Pull Requests</h3>
+<ul>
+<li>PERF: use array buffer methods for plot curve line/symbol data retrieval by @ken-lauer in <a href="https://github.com/bmad-sim/pytao/pull/133">https://github.com/bmad-sim/pytao/pull/133</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/bmad-sim/pytao/compare/v0.5.0...v0.5.1">https://github.com/bmad-sim/pytao/compare/v0.5.0...v0.5.1</a></p>
+<hr />
+<h1 id="v050">v0.5.0</h1>
+<h2 id="changes">Changes</h2>
+<ul>
+<li>
+<p>Bug fix: Tao refused to initialize after the very first initialization attempt failed.</p>
+</li>
+<li>
+<p>Enhanced and reworked the <code>pytao</code> command-line interface</p>
+</li>
+<li>If in a directory with a <code>tao.init</code> file, PyTao can be started with just running <code>pytao</code> with no arguments.</li>
+<li>
+<p>IPython is used if available, though the regular Python interpreter will be used as a backup.</p>
+</li>
+<li>
+<p>For the command-line interface, as in JupyterLab mode, <code>%tao</code> and <code>%%tao</code> magics allow you to send commands directly to the Tao command-line.</p>
+</li>
+<li>For example: <code>%tao show lat</code></li>
+<li>An even shorter shortcut is the input transformer.</li>
+<li>
+<p>This shortcut can be customized with the <code>--pyprefix</code> argument. Every IPython line that starts with this character will turn into a <code>tao.cmd()</code> line. It defaults to the backtick character (i.e., the key typically shared by tilde <code>~</code>)</p>
+</li>
+<li>
+<p>For example, noting the backtick:</p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code>In [1]: ` show lat
+</code></pre></div>
+<ul>
+<li>A preliminary Tao input mode is also available that behaves like the standard Tao command-line. Tab completion is offered for top-level commands and element names (in certain scenarios). To access it, either use <code>tao.shell()</code> or the single backtick shortcut:</li>
+</ul>
+<div class="highlight"><pre><span></span><code>In [1]: `
+Tao&gt; show lat
+</code></pre></div>
+<ul>
+<li>New command-line arguments:</li>
+<li><code>--help</code> to see PyTao and Tao's command-line options</li>
+<li><code>--pyplot</code> to configure PyTao's plotting backend (<code>mpl</code> or <code>bokeh</code>)</li>
+<li><code>--pyscript</code> to run a Python script after Tao initialization</li>
+<li><code>--pycommand</code> to run a Python command after Tao initialization</li>
+<li><code>--pylog</code> set the Python log level</li>
+<li><code>--pyno-subprocess</code> use <code>Tao</code> instead of <code>SubprocessTao</code></li>
+<li><code>--pyquiet</code> to hide the banner when starting <code>pytao</code></li>
+<li><code>--pytao</code> to go straight to Tao mode without initializing a <code>Tao</code> object</li>
+</ul>
+<h2 id="issues">Issues</h2>
+<ul>
+<li><code>#130</code></li>
+<li><code>#129</code></li>
+<li><code>#128</code></li>
+<li><code>#101</code></li>
+</ul>
+<h2 id="screenshots">Screenshots</h2>
+<p>The input transformer:
+<img width="692" alt="input transformer" src="https://github.com/user-attachments/assets/db34a299-5ac8-4e03-832b-dcf79e1139be" /></p>
+<p><code>Tao&gt;</code> command-line mode:</p>
+<p><img width="575" alt="tao command-line mode" src="https://github.com/user-attachments/assets/8315b522-c972-4e13-ac88-f067af7a56b3" /></p>
+<p>Element name tab completion in <code>Tao&gt;</code> command-line mode:</p>
+<p><img width="645" alt="tab completion" src="https://github.com/user-attachments/assets/c1a59367-52f3-4ff7-bd60-b2719befcd1a" /></p>
+<h2 id="whats-changed_7">What's Changed</h2>
+<ul>
+<li>ENH: <code>pytao</code> CLI rework with tab completion/magics + fixes for <code>TaoInitializationError</code> by @ken-lauer in <a href="https://github.com/bmad-sim/pytao/pull/131">https://github.com/bmad-sim/pytao/pull/131</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/bmad-sim/pytao/compare/v0.4.8...v0.5.0">https://github.com/bmad-sim/pytao/compare/v0.4.8...v0.5.0</a></p>
+<hr />
+<h1 id="v048">v0.4.8</h1>
+<h2 id="whats-changed_8">What's Changed</h2>
+<ul>
+<li>FIX: Tao.track_beam() case issue by @ken-lauer in <a href="https://github.com/bmad-sim/pytao/pull/127">https://github.com/bmad-sim/pytao/pull/127</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/bmad-sim/pytao/compare/v0.4.7...v0.4.8">https://github.com/bmad-sim/pytao/compare/v0.4.7...v0.4.8</a></p>
+<h2 id="changes_1">Changes</h2>
+<ul>
+<li>
+<p><code>pytao</code> import speed was improved when not using plotting libraries.</p>
+</li>
+<li>
+<p>In <code>Tao.track_beam</code>:</p>
+</li>
+<li>Bug fix: case sensitivity of track_start/track_end elements could cause <code>Tao.track_beam</code> to fail.</li>
+<li>Add support for <code>Tao.track_beam(start, end)</code> to set the track start/end positions easily</li>
+<li>Add support for setting <code>lattice_calc_on</code> automatically (and resetting it afterward)</li>
+</ul>
+<h2 id="issues_1">Issues</h2>
+<ul>
+<li><code>#126</code></li>
+</ul>
+<hr />
+<h1 id="v047">v0.4.7</h1>
+<h2 id="changes_2">Changes</h2>
+<ul>
+<li><code>pytao</code> now requires <a href="https://github.com/bmad-sim/bmad-ecosystem/releases/tag/20250226-0">Bmad 20250226</a> or later.</li>
+<li>Added <code>Tao.track_beam()</code> which (by default) displays a progress bar while setting <code>track_type = beam</code>.</li>
+<li>Added new module <code>pytao.pbar</code> which helps with progress-bar related tools</li>
+<li>For now, this is limited to beam tracking updates with track_beam_wrapper, a context manager which allows you to perform arbitrary Tao commands while it displays beam tracking status</li>
+<li>
+<p>Auto-detection of JupyterLab to determine which type of progress bar to use (CLI vs Jupyter widget)</p>
+</li>
+<li>
+<p>Bug fix: layout plots may raise an exception in taking the <code>max()</code> of an empty <code>ele_y2s</code> list.</p>
+</li>
+<li>
+<p>Added support for new <code>-quiet</code> flags from <code>Tao</code>.</p>
+</li>
+</ul>
+<h2 id="issues_2">Issues</h2>
+<p>Closed #119
+Closed #120</p>
+<h2 id="screenshots_1">Screenshots</h2>
+<ul>
+<li>Using PyTao in Jupyter Lab:</li>
+</ul>
+<p><a href="https://github.com/user-attachments/assets/ed987e51-119b-4da0-96f6-b0c20135a451">https://github.com/user-attachments/assets/ed987e51-119b-4da0-96f6-b0c20135a451</a></p>
+<ul>
+<li>Using PyTao in the terminal:</li>
+</ul>
+<p><a href="https://github.com/user-attachments/assets/667e92bf-08b0-49f7-9abb-ad396ab9a3e2">https://github.com/user-attachments/assets/667e92bf-08b0-49f7-9abb-ad396ab9a3e2</a></p>
+<h1 id="v048_1">v0.4.8</h1>
+<h2 id="changes_3">Changes</h2>
+<ul>
+<li>
+<p><code>pytao</code> import speed was improved when not using plotting libraries.</p>
+</li>
+<li>
+<p>In <code>Tao.track_beam</code>:</p>
+</li>
+<li>Bug fix: case sensitivity of track_start/track_end elements could cause <code>Tao.track_beam</code> to fail.</li>
+<li>Add support for <code>Tao.track_beam(start, end)</code> to set the track start/end positions easily</li>
+<li>Add support for setting <code>lattice_calc_on</code> automatically (and resetting it afterward)</li>
+</ul>
+<h2 id="issues_3">Issues</h2>
+<p>Closed #126</p>
+<h1 id="v050_1">v0.5.0</h1>
+<h2 id="changes_4">Changes</h2>
+<ul>
+<li>
+<p>Bug fix: Tao refused to initialize after the very first initialization
+  attempt failed.</p>
+</li>
+<li>
+<p>Enhanced and reworked the <code>pytao</code> command-line interface</p>
+</li>
+<li>If in a directory with a <code>tao.init</code> file, PyTao can be started with just
+    running <code>pytao</code> with no arguments.</li>
+<li>
+<p>IPython is used if available, though the regular Python interpreter will
+    be used as a backup.</p>
+</li>
+<li>
+<p>For the command-line interface, as in JupyterLab mode, <code>%tao</code> and <code>%%tao</code>
+  magics allow you to send commands directly to the Tao command-line.</p>
+</li>
+<li>For example: <code>%tao show lat</code></li>
+<li>An even shorter shortcut is the input transformer.</li>
+<li>
+<p>This shortcut can be customized with the <code>--pyprefix</code> argument. Every
+    IPython line that starts with this character will turn into a <code>tao.cmd()</code>
+    line. It defaults to the backtick character (i.e., the key typically shared by tilde <code>~</code>)</p>
+</li>
+<li>
+<p>For example, noting the backtick:</p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code>In [1]: ` show lat
+</code></pre></div>
+<ul>
+<li>A preliminary Tao input mode is also available that behaves like the
+  standard Tao command-line. Tab completion is offered for top-level commands
+  and element names (in certain scenarios). To access it, either use
+  <code>tao.shell()</code> or the single backtick shortcut:</li>
+</ul>
+<div class="highlight"><pre><span></span><code>In [1]: `
+Tao&gt; show lat
+</code></pre></div>
+<ul>
+<li>New command-line arguments:</li>
+<li><code>--help</code> to see PyTao and Tao's command-line options</li>
+<li><code>--pyplot</code> to configure PyTao's plotting backend (<code>mpl</code> or <code>bokeh</code>)</li>
+<li><code>--pyscript</code> to run a Python script after Tao initialization</li>
+<li><code>--pycommand</code> to run a Python command after Tao initialization</li>
+<li><code>--pylog</code> set the Python log level</li>
+<li><code>--pyno-subprocess</code> use <code>Tao</code> instead of <code>SubprocessTao</code></li>
+<li><code>--pyquiet</code> to hide the banner when starting <code>pytao</code></li>
+<li><code>--pytao</code> to go straight to Tao mode without initializing a <code>Tao</code> object</li>
+</ul>
+<h2 id="issues_4">Issues</h2>
+<p>Closed #130
+Closed #129
+Closed #128
+Closed #101</p>
+<h2 id="screenshots_2">Screenshots</h2>
+<p>The input transformer:</p>
+<p><img width="692" alt="image" src="https://github.com/user-attachments/assets/db34a299-5ac8-4e03-832b-dcf79e1139be" /></p>
+<p><code>Tao&gt;</code> command-line mode:</p>
+<p><img width="575" alt="image" src="https://github.com/user-attachments/assets/8315b522-c972-4e13-ac88-f067af7a56b3" /></p>
+<p>Element name tab completion in <code>Tao&gt;</code> command-line mode:</p>
+<p><img width="645" alt="image" src="https://github.com/user-attachments/assets/c1a59367-52f3-4ff7-bd60-b2719befcd1a" /></p>
 
 
 
